@@ -1,0 +1,189 @@
+<MutationTestingSession SessionCreationWindowShowTime="2018-03-29T22:23:23.9472574-04:00" SessionStartTime="2018-03-29T22:24:11.5412598-04:00" SessionEndTime="2018-03-29T22:24:40.29297-04:00" SessionRunTimeSeconds="28.751710199999998" MutationScore="87">
+  <Mutants Total="8" Live="1" MarkedAsEquivalentAmongLive="0" UnpairedFirstOrderMutants="0" Killed="7" Untested="0" WithError="0" AverageCreationTimeMiliseconds="2238.375" AverageTestingTimeMiliseconds="3944.375">
+    <Assembly Name="ConsoleApp1" />
+    <Assembly Name="UnitTestProject1" />
+    <Assembly Name="ClassLibrary1">
+      <Type Name="Class1" Namespace="Class1ClassLibrary1">
+        <Method Name="Method1">
+          <Mutant Id="AOR#2" Description="Multiplication" State="Live" IsEquivalent="false" CreationTimeMiliseconds="2918" TestingTimeMiliseconds="4270" TestingEndRelativeSeconds="17.0725426" />
+          <Mutant Id="AOR#1" Description="Subtraction" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="2925" TestingTimeMiliseconds="4284" TestingEndRelativeSeconds="17.086540499999998" />
+          <Mutant Id="AOR#3" Description="Division" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="3087" TestingTimeMiliseconds="4188" TestingEndRelativeSeconds="17.1565415" />
+          <Mutant Id="AOR#4" Description="Modulus" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="1917" TestingTimeMiliseconds="4368" TestingEndRelativeSeconds="23.4664953" />
+          <Mutant Id="AOR#6" Description="RightParam" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="1854" TestingTimeMiliseconds="4465" TestingEndRelativeSeconds="23.460490099999998" />
+          <Mutant Id="AOR#5" Description="LeftParam" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="1807" TestingTimeMiliseconds="4254" TestingEndRelativeSeconds="23.253492899999998" />
+          <Mutant Id="OODL#1" Description="LeftOperandRemoved" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="894" TestingTimeMiliseconds="3023" TestingEndRelativeSeconds="27.199910199999998" />
+          <Mutant Id="OODL#2" Description="RightOperandRemoved" State="Killed" IsEquivalent="false" CreationTimeMiliseconds="2505" TestingTimeMiliseconds="2703" TestingEndRelativeSeconds="28.703715199999998" />
+        </Method>
+      </Type>
+    </Assembly>
+  </Mutants>
+  <CodeDifferenceListings>
+    <MutantCodeListing MutantId="AOR#2">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a * b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="AOR#1">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a - b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="AOR#3">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a / b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="AOR#4">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a % b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="AOR#6">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="AOR#5">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="OODL#1">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return b;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+    <MutantCodeListing MutantId="OODL#2">
+      <Code>
+   1    1   public int Method1(int a, int b)
+   2    2   {
+   3       -      return a + b;
+        3  +      return a;
+   4    4   
+   5    5   }
+   6    6   
+</Code>
+    </MutantCodeListing>
+  </CodeDifferenceListings>
+  <DetailedTestingResults>
+    <TestedMutant MutantId="AOR#2" TestingTimeMiliseconds="4270">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Passed" />
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="AOR#1" TestingTimeMiliseconds="4284">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="AOR#3" TestingTimeMiliseconds="4188">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;1&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="AOR#4" TestingTimeMiliseconds="4368">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="AOR#6" TestingTimeMiliseconds="4465">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="AOR#5" TestingTimeMiliseconds="4254">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="OODL#1" TestingTimeMiliseconds="3023">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+    <TestedMutant MutantId="OODL#2" TestingTimeMiliseconds="2703">
+      <Tests NumberOfFailedTests="0" NumberOfPassedTests="1" NumberOfInconlusiveTests="0">
+        <TestClass Name="UnitTest1" FullName="UnitTestProject1.UnitTest1">
+          <TestMethod Name="TestMethod1" Outcome="Failed">
+            <Message>Test method UnitTestProject1.UnitTest1.TestMethod1 threw exception: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;4&gt;. </Message>
+          </TestMethod>
+        </TestClass>
+      </Tests>
+    </TestedMutant>
+  </DetailedTestingResults>
+</MutationTestingSession>

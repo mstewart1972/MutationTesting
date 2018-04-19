@@ -1,0 +1,6 @@
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\b\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\b\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\b\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\i\ConsoleApp1\Debug\ConsoleApp1.exe
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\i\ConsoleApp1\Debug\ConsoleApp1.pdb
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\i\ConsoleApp1\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache

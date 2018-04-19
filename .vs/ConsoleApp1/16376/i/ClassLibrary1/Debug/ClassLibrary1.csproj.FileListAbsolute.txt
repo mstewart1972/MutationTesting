@@ -1,0 +1,4 @@
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\b\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\b\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\i\ClassLibrary1\Debug\ClassLibrary1.dll
+C:\data\My Code\NET\ConsoleApp1\.vs\ConsoleApp1\16376\i\ClassLibrary1\Debug\ClassLibrary1.pdb
